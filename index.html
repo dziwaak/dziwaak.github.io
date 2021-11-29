@@ -16,71 +16,100 @@
     width: 200px;
     height: 150px;
   }
-
   .c3 {
     border-radius: 125px;  
   }
 
-  .icon {
-    text-align: center;  
-    margin: 20px;
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .title {
+    font-size: 50pt;
+    color: lightcoral; 
+    margin-bottom: 30pt;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .container {
-    display: flex; justify-content: center; 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20pt;
+    
   }
+  
+  .icon {
+    text-align: center;  
+    width: 200pt;
+  }
+  .label {
+    text-align: center;  
+    margin-top: 10pt;
+  }
+
+  .head {
+    text-transform: uppercase;
+  }
+
+  .temperature:after {
+    content: '℃';
+  }
+
+  .fa-sun {
+    color:yellow
+  }  
 </style>
 </head>
 <body>
-  <div style="text-align: center; font-size: 50px; color: lightcoral; margin-bottom: 30px;">
+  <div class="title">
     Historia Pogody listopad 2021
   </div>
-<div claSS="container">
-  <div class="icon">
-    <i class="fas fa-sun fa-3x" ></i>
-    <br/>
-    sun
+  <div class="container">
+    <div class="icon">
+      <i class="fas fa-sun fa-3x" ></i>
+      <div class="label">Słońce</div>
+    </div>
+    <div class="icon">
+      <i class="fas fa-cloud-sun fa-3x"></i>
+      <div class="label">Słońce i chmury</div>
+    </div>
+    <div class="icon">
+      <i class="fas fa-cloud-sun-rain fa-3x" style="color: Dodgerblue;"></i>
+      <div class="label">Słońce, chmury i deszcz</div>
+    </div>
+    <div class="icon">
+      <i class="fas fa-cloud-showers-heavy fa-3x" style="color: blue;"></i>
+      <div class="label">Deszcz</div>
+    </div>
+    <div class="icon">
+      <i class="fas fa-snowflake fa-3x" style="color: blue;"></i>
+      <div class="label">Śnieg</div>
+    </div>
   </div>
-  <div class="icon">
-    <i class="fas fa-cloud-sun fa-3x"></i>
-    <br/>
-    clound sun
-  </div>
-  <div class="icon">
-    <i class="fas fa-cloud-sun-rain fa-3x" style="color: Dodgerblue;"></i>
-    <br/>
-    cloud sun rain
-  </div>
-  <div class="icon">
-    <i class="fas fa-cloud-showers-heavy fa-3x" style="color: blue;"></i>
-    <br>
-    rain
-  </div>
-</div>
 <table style="width: 100%; border: 1px solid gray;" border=1 cellpadding="10px" cellspacing="0">
-  <tr style="background-color:darkgray;">
+  <tr class='head'>
     <td>dzień</td>
     <td>temperatura min</td>
     <td>temperatura max</td>
     <td>Pogoda</td>
   </tr>
-  <tr style="background-color: lightgray;">
+  <tr class="raw">
     <td>2021-11-01</td>
-    <td>5℃</td>    
-    <td>10℃</td>
-    <td><i class="fas fa-cloud-showers-heavy fa-3x" style="color: blue;"></i></td>
+    <td class="temperature">5</td>
+    <td class="temperature">5</td>   
+    <td><i class="fas fa-sun"></i></td>
   </tr>
-  <tr style="background-color: lightgray;">
+  <tr class="raw">
     <td>2021-11-02</td>
-    <td>5℃</td>    
-    <td>10℃</td>
-    <td><i class="fas fa-cloud-showers-heavy fa-3x" style="color: blue;"></i></td>
+    <td class="temperature">5</td>
+    <td class="temperature">5</td>
+    <td><i class="fas fa-cloud-showers-heavy"></i></td>
   </tr>
 </table>
-<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <img src="http://www.telekarma.pl/userfiles/images/aktualnosci/zdj%C4%99cia%20do%20aktualno%C5%9Bci/jak-nauczyc-kota-reagowania-na-swoje-imie.jpg" class="imgsize c3">
-
-<br><br>
 <img src="https://ocdn.eu/pulscms-transforms/1/snhktkpTURBXy80OGE4OGZlZDZkY2VmZjViNTU5ZjA5YzFhYTUyMzMwMy5qcGeRkwXNBLDNAnM" alt="kotek" class="imgsize c3">
   <table style="width: 100%;border: 11px solid blue;" cellpadding="12px" cellspacing="4px">
     <tr>
