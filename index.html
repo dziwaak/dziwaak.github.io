@@ -22,11 +22,11 @@
 
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;     
   }
 
   .title {
-    font-size: 50pt;
+    font-size: 30pt;
     color: lightcoral; 
     margin-bottom: 30pt;
     text-align: center;
@@ -58,8 +58,14 @@
   }
 
   .fa-sun {
-    color:yellow
+    color: yellow
   }  
+  .fa-snowflake {
+    color: blue
+  }  
+  .raw {
+    font-size: 10pt;
+  }
 </style>
 </head>
 <body>
@@ -76,39 +82,57 @@
       <div class="label">Słońce i chmury</div>
     </div>
     <div class="icon">
-      <i class="fas fa-cloud-sun-rain fa-3x" style="color: Dodgerblue;"></i>
+      <i class="fas fa-cloud-sun-rain fa-3x"></i>
       <div class="label">Słońce, chmury i deszcz</div>
     </div>
     <div class="icon">
-      <i class="fas fa-cloud-showers-heavy fa-3x" style="color: blue;"></i>
+      <i class="fas fa-cloud-showers-heavy fa-3x"></i>
       <div class="label">Deszcz</div>
     </div>
     <div class="icon">
-      <i class="fas fa-snowflake fa-3x" style="color: blue;"></i>
+      <i class="fas fa-snowflake fa-3x"></i>
       <div class="label">Śnieg</div>
     </div>
   </div>
-<table style="width: 100%; border: 1px solid gray;" border=1 cellpadding="10px" cellspacing="0">
+<table style="width: 100%; border: 1px solid gray;" border=1 cellpadding="4px" cellspacing="0">
   <tr class='head'>
     <td>dzień</td>
     <td>temperatura min</td>
     <td>temperatura max</td>
     <td>Pogoda</td>
   </tr>
-  <tr class="raw">
-    <td>2021-11-01</td>
-    <td class="temperature">5</td>
-    <td class="temperature">5</td>   
-    <td><i class="fas fa-sun"></i></td>
-  </tr>
-  <tr class="raw">
-    <td>2021-11-02</td>
-    <td class="temperature">5</td>
-    <td class="temperature">5</td>
-    <td><i class="fas fa-cloud-showers-heavy"></i></td>
-  </tr>
+  <tr class="raw"><td>2021-11-01</td><td class="temperature"> 0</td><td class="temperature">14</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-02</td><td class="temperature"> 5</td><td class="temperature">12</td><td><i class="fas fa-cloud-showers-heavy"></i></td></tr>
+  <tr class="raw"><td>2021-11-03</td><td class="temperature"> 4</td><td class="temperature">13</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-04</td><td class="temperature"> 6</td><td class="temperature">16</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-05</td><td class="temperature"> 7</td><td class="temperature"> 9</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-06</td><td class="temperature"> 0</td><td class="temperature"> 9</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-07</td><td class="temperature"> 0</td><td class="temperature">12</td><td><i class="fas fa-cloud-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-08</td><td class="temperature"> 2</td><td class="temperature">11</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-09</td><td class="temperature"> 5</td><td class="temperature"> 8</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-10</td><td class="temperature"> 2</td><td class="temperature">12</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-11</td><td class="temperature"> 1</td><td class="temperature">10</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-12</td><td class="temperature"> 3</td><td class="temperature"> 7</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-13</td><td class="temperature"> 0</td><td class="temperature">10</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-14</td><td class="temperature"> 5</td><td class="temperature"> 8</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-15</td><td class="temperature"> 6</td><td class="temperature"> 8</td><td><i class="fas fa-cloud"></i></td></tr>
+  <tr class="raw"><td>2021-11-16</td><td class="temperature"> 0</td><td class="temperature"> 9</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-17</td><td class="temperature"> 3</td><td class="temperature"> 7</td><td><i class="fas fa-cloud"></i></td></tr>
+  <tr class="raw"><td>2021-11-18</td><td class="temperature"> 5</td><td class="temperature">10</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-19</td><td class="temperature"> 6</td><td class="temperature">12</td><td><i class="fas fa-cloud-showers-heavy"></i></td></tr>
+  <tr class="raw"><td>2021-11-20</td><td class="temperature"> 8</td><td class="temperature"> 9</td><td><i class="fas fa-cloud-showers-heavy"></i></td></tr>
+  <tr class="raw"><td>2021-11-21</td><td class="temperature"> 6</td><td class="temperature"> 9</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-22</td><td class="temperature"> 5</td><td class="temperature">12</td><td><i class="fas fa-cloud-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-23</td><td class="temperature"> 0</td><td class="temperature"> 4</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-24</td><td class="temperature"> 1</td><td class="temperature"> 5</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-25</td><td class="temperature"> 0</td><td class="temperature"> 5</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-26</td><td class="temperature">-3</td><td class="temperature"> 7</td><td><i class="fas fa-snowflake"></i></td></tr>
+  <tr class="raw"><td>2021-11-27</td><td class="temperature"> 0</td><td class="temperature"> 4</td><td><i class="fas fa-sun"></i></td></tr>
+  <tr class="raw"><td>2021-11-28</td><td class="temperature"> 0</td><td class="temperature"> 5</td><td><i class="fas fa-snowflake"></i></td></tr>
+  <tr class="raw"><td>2021-11-29</td><td class="temperature"> 0</td><td class="temperature"> 1</td><td><i class="fas fa-snowflake"></i></td></tr>
+  <tr class="raw"><td>2021-11-30</td><td class="temperature"> 0</td><td class="temperature"> 5</td><td><i class="fas fa-snowflake"></i></td></tr>
 </table>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--
 <img src="http://www.telekarma.pl/userfiles/images/aktualnosci/zdj%C4%99cia%20do%20aktualno%C5%9Bci/jak-nauczyc-kota-reagowania-na-swoje-imie.jpg" class="imgsize c3">
 <img src="https://ocdn.eu/pulscms-transforms/1/snhktkpTURBXy80OGE4OGZlZDZkY2VmZjViNTU5ZjA5YzFhYTUyMzMwMy5qcGeRkwXNBLDNAnM" alt="kotek" class="imgsize c3">
   <table style="width: 100%;border: 11px solid blue;" cellpadding="12px" cellspacing="4px">
@@ -161,6 +185,7 @@
     COS COŚ<br/>
     <dir>12345</dir>
     <big style="background-color: brown;  padding-top: 15px; border: 2px black solid;">COŚŚŚŚ</big>
+  -->
 </body>
 </html>
 
